@@ -1,0 +1,58 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "mon rer",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "DestinationIntent",
+          "slots": [
+            {
+              "name": "destination",
+              "type": "AMAZON.City"
+            }
+          ],
+          "samples": [
+            "Quel est le prochain rer pour {destination}",
+            "Quel est le prochain train pour {destination}",
+            "Quand est le prochain train pour {destination}",
+            "Quand est le prochain rer pour {destination}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "lognes"
+              }
+            },
+            {
+              "name": {
+                "value": "paris"
+              }
+            }
+          ],
+          "name": "AMAZON.City"
+        }
+      ]
+    }
+  },
+  "version": "3"
+}
